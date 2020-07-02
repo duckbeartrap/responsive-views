@@ -1,0 +1,6 @@
+1) All keys of an object can be printed using Object.keys(obj).
+2) Promise is a value that will be produced in the future.
+It has three states which are - pending, resolved, rejected.
+Promise takes a callback function as a parameter, where you can do some asynchronous operations.
+3) Promises have callbacks attatched to resolve the return. Also provided with a catch block in case of error. 
+4) "This" is a reference to the current scope.

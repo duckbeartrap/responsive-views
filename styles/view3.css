@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.container {
+    height: 100vh;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../images/step3bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    background: rgba(16, 16, 16, 0.5);;
+    left: 0px;
+    right: 0px;
+    height: 100vh;
+    z-index: 112;
+    overflow-y: hidden;
+}
+
+.modal-content {
+    background: #fff;
+    max-height: 95vh;
+    width: 95%;
+    border-radius: 3px;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.succes-icon {
+    margin-top: 20px;
+}
+
+.succes-icon-image {
+    height: 130px;
+}
+
+.succes-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.line {
+    margin: 30px 10px 0px 10px;
+    border-top: 1px solid #13689a;
+    color: gray;
+    line-height: normal;
+    font-size: 1.1rem;
+    padding: 10px 5px;
+}
+
+.add-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+.add-card-btn {
+    width: 97%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: #13689a;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #0d4b6e;
+    box-shadow: 0 0 5px gray;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.add-card-btn-icon {
+    height: 20px;
+    position: absolute;
+    left: 20px
+}
+
+.footer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    border-top: 1px solid gray;
+    color: #0d4b6e;
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.footer-done {
+    margin-right: 20px;
+    cursor: pointer;
+}

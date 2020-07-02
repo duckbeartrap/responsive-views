@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.container {
+    height: 100vh;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    background: #2ca3e9;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-btn {
+    background: none;
+    border: 0;
+    color: #fff;
+}
+
+.header-close {
+    margin-left: 10px;
+}
+
+.header-save {
+    margin-right: 10px;
+}
+
+.header-title {
+    flex: 1;
+    padding-left: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+.main-secure {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.main-secure-img {
+    height: 60px;
+}
+
+.setup {
+    margin-top: 50px;
+}
+
+.setup-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.setup-content {
+    margin-top: 20px;
+    display: flex;
+}
+
+.setup-content-list-item {
+    font-size: 1.1rem;
+    color: gray;
+    margin-bottom: 5px;
+    line-height: normal;
+}
+
+
+.setup-content-help-img {
+    height: 30px;
+}
+
+.connect, .manual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.manual {
+    margin-top: 20px;
+}
+
+.connect-btn, .manual-btn {
+    width: 97%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: #2ca3e9;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #0d4b6e;
+    box-shadow: 0 0 5px gray;
+    font-size: 0.9rem;
+}
+
+.connect-btn-icon {
+    height: 20px;
+    position: absolute;
+    left: 20px
+}
+
+.or-line {
+    position: relative;
+    margin: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    border-bottom: 1px solid #2ca3e9;
+    width: 100%;
+}
+
+.line-or {
+    position: absolute;
+    width: 50px;
+    background-color: #fff;
+    text-align: center;
+    bottom: -8px;
+    color: #2ca3e9;
+}
+
+.fill-form {
+    font-size: 1rem;
+    color: gray;
+}
+
+.footer {
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.dots {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+    margin-right: 8px;
+}
+
+.dot:last-child {
+    margin-right: 0px;
+}
+
+.dot-selected {
+    background: #2ca3e9;
+}
+
+.arrow {
+    color: #2ca3e9;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+@media screen and (max-height: 700px) {
+    .main-secure {
+        margin-top: 20px;
+    }
+
+    .main-secure-img {
+        height: 40px;
+    }
+
+    .setup {
+        margin-top: 20px;
+    }
+
+    .connect {
+        margin-top: 40px;
+    }
+
+    .setup-title {
+        font-size: 1.1rem;
+    }
+
+    .setup-content-list-item {
+        font-size: 1rem;
+    }
+
+}  
+
+@media screen and (max-height: 600px) {
+    .connect {
+        margin-top: 20px;
+    }
+
+    .or-line {
+        margin: 30px 0;
+    }
+}

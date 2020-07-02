@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.container {
+    height: 100vh;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    -webkit-box-shadow: inset 0px -200px 71px -99px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0px -200px 71px -99px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px -200px 71px -99px rgba(255, 255, 255, 1);
+    background: url('https://marketplace.canva.com/EAD7RZBpky0/1/0/400w/canva-blue-and-white-gaming-logo-N-0-xW64Gwc.jpg');
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.main-title {
+    color: #13689a;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.main-description {
+    line-height: normal;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.btn {
+    background: #fff;
+    border: 1px solid #13689a;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #13689a;
+    font-size: 1rem;
+    box-shadow: 0px 2px 5px #13689a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+    margin-right: 8px;
+}
+
+.dot:last-child {
+    margin-right: 0px;
+}
+
+.dot-selected {
+    background: #13689a;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid gray;
+}
+
+
+
+@media screen and (max-height: 700px) {
+    .header {
+        height: 45vh;
+    }
+
+    .main-description {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .main-description {
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+
+
+
+    .main-title {
+        font-size: 1.2rem;
+    }
+
+    .main-btn {
+        margin-top: 20px;
+    }
+
+    .main-btn-started {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+}
